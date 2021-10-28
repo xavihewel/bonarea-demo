@@ -22,5 +22,5 @@ CREATE TABLE `mensaje_xverges` (
 `texto` varchar(200) NOT NULL,
 PRIMARY KEY (`idmensaje`),
 KEY `fk_autor_idx` (`idautor`),
-CONSTRAINT `fk_autor` FOREIGN KEY (`idautor`) REFERENCES `autor` (`idautor`) ON DELETE NO ACTION ON UPDATE NO ACTION
+CONSTRAINT `fk_autor` FOREIGN KEY (`idautor`) REFERENCES `autor_xverges` (`idautor`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
